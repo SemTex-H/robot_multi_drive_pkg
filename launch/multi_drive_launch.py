@@ -10,7 +10,7 @@ def generate_launch_description():
             name='joy_node',
             parameters=[{'deadzone': 0.1}]
         ),
-        # Your Custom Controller Node
+        # Custom Controller Node
         Node(
             package='robot_multi_drive',
             executable='robot_control',
