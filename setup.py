@@ -22,7 +22,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'motor_control = robot_multi_drive.control:main',
+            'robot_control = robot_multi_drive.control:main',
+            'cam_record = robot_multi_drive.recorder_node:main',
         ],
     },
 )
