@@ -16,6 +16,19 @@ def generate_launch_description():
             executable='robot_control',
             name='robot_control_node'
         ),
+        # camera node
+        Node(
+            package='usb_cam',
+            executable='usb_cam_node_exe',
+            namespace='rear_camera',
+            parameters=[{
+                'video_device': '/dev/video0',
+                'pixel_format': 'mjpeg2rgb',
+                'image_width': 640,
+                'image_height': 480,
+                'framerate': 30.0
+            }]
+        )
         # Recorder node
         Node(
             package='robot_multi_drive',
