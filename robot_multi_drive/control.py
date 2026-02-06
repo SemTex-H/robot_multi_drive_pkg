@@ -103,7 +103,7 @@ class ControlNode(Node):
         data.append(low_byte)
 
         data += (self.packet_footer)
-        self.get_logger().info(f"Writing data: {data}")
+        # self.get_logger().info(f"Writing data: {data}")
         self.ser.write(data)
 
 def main():
