@@ -28,7 +28,7 @@ def generate_launch_description():
                 'image_height': 480,
                 'framerate': 30.0
             }]
-        )
+        ),
         # Recorder node
         Node(
             package='robot_multi_drive',
