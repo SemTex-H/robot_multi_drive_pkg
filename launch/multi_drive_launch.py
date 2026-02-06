@@ -4,12 +4,12 @@ from launch_ros.actions import Node
 def generate_launch_description():
     return LaunchDescription([
         # Joystick Driver Node
-        Node(
-            package='joy',
-            executable='joy_node',
-            name='joy_node',
-            parameters=[{'deadzone': 0.1}]
-        ),
+        # Node(
+        #     package='joy',
+        #     executable='joy_node',
+        #     name='joy_node',
+        #     parameters=[{'deadzone': 0.1}]
+        # ),
         # Custom Controller Node
         Node(
             package='robot_multi_drive',
