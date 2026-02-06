@@ -24,7 +24,7 @@ def generate_launch_description():
             parameters=[{
                 'video_device': '/dev/video0',
                 'io_method': 'mmap',
-                'pixel_format': 'mjpeg',
+                'pixel_format': 'mjpeg2rgb',
                 'image_width': 640,
                 'image_height': 480,
                 'framerate': 30.0
