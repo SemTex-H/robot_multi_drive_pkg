@@ -28,8 +28,8 @@ class DualCamJoyController(Node):
         # Button Mapping (Verified for your 8-axis controller)
         self.BTN_LB = 6   # Index 6
         self.BTN_RB = 7   # Index 7
-        self.AXIS_LT = 4  # Index 4
-        self.AXIS_RT = 5  # Index 5
+        self.AXIS_LT = 5  # Index 4
+        self.AXIS_RT = 4  # Index 5
         
         self.lt_pressed = False
         self.rt_pressed = False
